@@ -1075,7 +1075,7 @@ function Slycer:CreateWindow(GameName)
 					SliderValue_1.Position = UDim2.new(0.5, 0,0.5, 0)
 					SliderValue_1.Size = UDim2.new(0, 171,0, 9)
 					SliderValue_1.Font = Enum.Font.Code
-					SliderValue_1.Text = "0"
+					SliderValue_1.Text = "0/"..max
 					SliderValue_1.TextColor3 = Color3.fromRGB(200,200,200)
 					SliderValue_1.TextSize = 12
 					SliderValue_1.TextStrokeTransparency = 0
