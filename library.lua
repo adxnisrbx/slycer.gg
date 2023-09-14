@@ -1212,7 +1212,7 @@ function Slycer:CreateWindow(GameName)
 					ScrollingFrame_1.BackgroundTransparency = 1
 					ScrollingFrame_1.BorderColor3 = Color3.fromRGB(0,0,0)
 					ScrollingFrame_1.BorderSizePixel = 0
-					ScrollingFrame_1.Position = UDim2.new(0, 0,0.3, 0)
+					ScrollingFrame_1.Position = UDim2.new(0, 0,1, 0)
 					ScrollingFrame_1.Size = UDim2.new(0, 172,0, 53)
 					ScrollingFrame_1.ClipsDescendants = true
 					ScrollingFrame_1.AutomaticCanvasSize = Enum.AutomaticSize.Y
