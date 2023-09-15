@@ -58,7 +58,24 @@ function Slycer:CreateWindow(GameName)
 	local UIToggle_1 = Instance.new("TextButton")
 	local UIPadding_19 = Instance.new("UIPadding")
 	local UIStroke_18 = Instance.new("UIStroke")
-
+	local CreditsHolder_1 = Instance.new("Frame")
+	local UIStroke_18 = Instance.new("UIStroke")
+	local CreditsTopBar_1 = Instance.new("Frame")
+	local UIStroke_19 = Instance.new("UIStroke")
+	local CreditsTitle_1 = Instance.new("TextLabel")
+	local UIPadding_19 = Instance.new("UIPadding")
+	local CreditsMain_1 = Instance.new("Frame")
+	local MyHolder_1 = Instance.new("Frame")
+	local MyButton_1 = Instance.new("TextButton")
+	local UIStroke_20 = Instance.new("UIStroke")
+	local DiscHolder_1 = Instance.new("Frame")
+	local DiscButton_1 = Instance.new("TextButton")
+	local UIStroke_21 = Instance.new("UIStroke")
+	local UIToggleHolder_1 = Instance.new("Frame")
+	local UIToggle_1 = Instance.new("TextButton")
+	local UIPadding_20 = Instance.new("UIPadding")
+	local UIStroke_22 = Instance.new("UIStroke")
+	
 	slycer.Name = "slycer"
 	slycer.Parent = game.CoreGui
 	slycer.Enabled = true
@@ -173,7 +190,7 @@ function Slycer:CreateWindow(GameName)
 	CloseBtn_1.MouseButton1Click:Connect(function()
 		game.CoreGui:FindFirstChild("slycer"):Destroy()
 	end)
-	
+
 	MinimizeBtn_1.Name = "MinimizeBtn"
 	MinimizeBtn_1.Parent = TopBar_1
 	MinimizeBtn_1.Active = true
@@ -192,7 +209,7 @@ function Slycer:CreateWindow(GameName)
 		Main_1.Visible = false
 		UIToggleHolder_1.Visible = true
 	end)
-	
+
 	ElementsHolder_1.Name = "ElementsHolder"
 	ElementsHolder_1.Parent = Main_1
 	ElementsHolder_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
@@ -201,7 +218,7 @@ function Slycer:CreateWindow(GameName)
 	ElementsHolder_1.BorderSizePixel = 0
 	ElementsHolder_1.Position = UDim2.new(0.0124334311, 0,0.0677966103, 0)
 	ElementsHolder_1.Size = UDim2.new(0, 564,0, 378)
-	
+
 	InfoBar_1.Name = "InfoBar"
 	InfoBar_1.Parent = Main_1
 	InfoBar_1.AutomaticSize = Enum.AutomaticSize.X
@@ -225,7 +242,7 @@ function Slycer:CreateWindow(GameName)
 	Info_1.TextSize = 13
 	Info_1.TextStrokeTransparency = 0
 	Info_1.TextXAlignment = Enum.TextXAlignment.Left
-	
+
 	local lastUpdateTime = tick()
 	local frameCount = 0
 
@@ -241,7 +258,7 @@ function Slycer:CreateWindow(GameName)
 	end
 
 	game:GetService("RunService").Heartbeat:Connect(updateFPS)
-	
+
 	UIPadding_13.Parent = Info_1
 	UIPadding_13.PaddingLeft = UDim.new(0,9)
 	UIPadding_13.PaddingRight = UDim.new(0,6)
@@ -249,7 +266,7 @@ function Slycer:CreateWindow(GameName)
 	UIStroke_11.Parent = InfoBar_1
 	UIStroke_11.Color = Color3.fromRGB(80,80,80)
 	UIStroke_11.Thickness = 1
-	
+
 	KeyBindsHolder_1.Name = "KeyBindsHolder"
 	KeyBindsHolder_1.Parent = Main_1
 	KeyBindsHolder_1.BackgroundColor3 = Color3.fromRGB(27,27,27)
@@ -426,7 +443,7 @@ function Slycer:CreateWindow(GameName)
 	PlayerProfile_1.Size = UDim2.new(0, 35,0, 35)
 	PlayerProfile_1.ClipsDescendants = true
 	PlayerProfile_1.Image = profilePictureUrl
-	
+
 	PlaceHolder_1.Name = "PlaceHolder"
 	PlaceHolder_1.Parent = Main_1
 	PlaceHolder_1.BackgroundColor3 = Color3.fromRGB(27,27,27)
@@ -507,7 +524,7 @@ function Slycer:CreateWindow(GameName)
 	PlaceName_1.TextSize = 12
 	PlaceName_1.TextStrokeTransparency = 0
 	PlaceName_1.TextXAlignment = Enum.TextXAlignment.Left
-	
+
 	PlaceHolder_1.Name = "PlaceHolder"
 	PlaceHolder_1.Parent = Main_1
 	PlaceHolder_1.BackgroundColor3 = Color3.fromRGB(27,27,27)
@@ -598,7 +615,7 @@ function Slycer:CreateWindow(GameName)
 	UIToggleHolder_1.Position = UDim2.new(0.5, 0,0.03, 0)
 	UIToggleHolder_1.Size = UDim2.new(0, 72,0, 24)
 	UIToggleHolder_1.Visible = false
-	
+
 	UIToggle_1.Name = "UIToggle"
 	UIToggle_1.Parent = UIToggleHolder_1
 	UIToggle_1.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -618,14 +635,163 @@ function Slycer:CreateWindow(GameName)
 		Main_1.Visible = true
 		UIToggleHolder_1.Visible = false
 	end)
-	
-	
+
+
 	UIPadding_19.Parent = UIToggle_1
 	UIPadding_19.PaddingLeft = UDim.new(0,6)
 
 	UIStroke_18.Parent = UIToggleHolder_1
 	UIStroke_18.Color = Color3.fromRGB(87,87,87)
 	UIStroke_18.Thickness = 1
+	
+	CreditsHolder_1.Name = "CreditsHolder"
+	CreditsHolder_1.Parent = Main_1
+	CreditsHolder_1.BackgroundColor3 = Color3.fromRGB(27,27,27)
+	CreditsHolder_1.BorderColor3 = Color3.fromRGB(0,0,0)
+	CreditsHolder_1.BorderSizePixel = 0
+	CreditsHolder_1.Position = UDim2.new(1.00999999, 0,0, 234)
+	CreditsHolder_1.Size = UDim2.new(0, 172,0, 70)
+
+	UIStroke_18.Parent = CreditsHolder_1
+	UIStroke_18.Color = Color3.fromRGB(80,80,80)
+	UIStroke_18.Thickness = 1
+
+	CreditsTopBar_1.Name = "CreditsTopBar"
+	CreditsTopBar_1.Parent = CreditsHolder_1
+	CreditsTopBar_1.BackgroundColor3 = Color3.fromRGB(37,37,37)
+	CreditsTopBar_1.BorderColor3 = Color3.fromRGB(0,0,0)
+	CreditsTopBar_1.BorderSizePixel = 0
+	CreditsTopBar_1.Size = UDim2.new(0, 172,0, 21)
+
+	UIStroke_19.Parent = CreditsTopBar_1
+	UIStroke_19.Color = Color3.fromRGB(80,80,80)
+	UIStroke_19.Thickness = 1
+
+	CreditsTitle_1.Name = "CreditsTitle"
+	CreditsTitle_1.Parent = CreditsTopBar_1
+	CreditsTitle_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+	CreditsTitle_1.BackgroundTransparency = 1
+	CreditsTitle_1.BorderColor3 = Color3.fromRGB(0,0,0)
+	CreditsTitle_1.BorderSizePixel = 0
+	CreditsTitle_1.Size = UDim2.new(0, 172,0, 21)
+	CreditsTitle_1.Font = Enum.Font.Code
+	CreditsTitle_1.Text = "Credits"
+	CreditsTitle_1.TextColor3 = Color3.fromRGB(200,200,200)
+	CreditsTitle_1.TextSize = 13
+	CreditsTitle_1.TextStrokeTransparency = 0
+	CreditsTitle_1.TextXAlignment = Enum.TextXAlignment.Left
+
+	UIPadding_19.Parent = CreditsTitle_1
+	UIPadding_19.PaddingLeft = UDim.new(0,6)
+
+	CreditsMain_1.Name = "CreditsMain"
+	CreditsMain_1.Parent = CreditsHolder_1
+	CreditsMain_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+	CreditsMain_1.BackgroundTransparency = 1
+	CreditsMain_1.BorderColor3 = Color3.fromRGB(0,0,0)
+	CreditsMain_1.BorderSizePixel = 0
+	CreditsMain_1.Position = UDim2.new(0, 0,0.304347813, 0)
+	CreditsMain_1.Size = UDim2.new(0, 172,0, 48)
+
+	MyHolder_1.Name = "MyHolder"
+	MyHolder_1.Parent = CreditsMain_1
+	MyHolder_1.AnchorPoint = Vector2.new(0.5, 0.5)
+	MyHolder_1.BackgroundColor3 = Color3.fromRGB(27,27,27)
+	MyHolder_1.BorderColor3 = Color3.fromRGB(0,0,0)
+	MyHolder_1.BorderSizePixel = 0
+	MyHolder_1.Position = UDim2.new(0.499611795, 0,0.270833343, 0)
+	MyHolder_1.Size = UDim2.new(0, 160,0, 13)
+
+	MyButton_1.Name = "MyButton"
+	MyButton_1.Parent = MyHolder_1
+	MyButton_1.AnchorPoint = Vector2.new(0.5, 0.5)
+	MyButton_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+	MyButton_1.BackgroundTransparency = 1
+	MyButton_1.BorderColor3 = Color3.fromRGB(0,0,0)
+	MyButton_1.BorderSizePixel = 0
+	MyButton_1.Position = UDim2.new(0.5, 0,0.5, 0)
+	MyButton_1.Size = UDim2.new(0, 160,0, 13)
+	MyButton_1.Font = Enum.Font.Code
+	MyButton_1.Text = "Pr0phecy"
+	MyButton_1.TextColor3 = Color3.fromRGB(200,200,200)
+	MyButton_1.TextSize = 12
+	MyButton_1.TextStrokeTransparency = 0
+	MyButton_1.MouseButton1Click:Connect(function()
+		MyHolder_1.BackgroundColor3 = Color3.fromRGB(70,70,70)
+		wait(0.1)
+		MyHolder_1.BackgroundColor3 = Color3.fromRGB(27,27,27)
+		setclipboard("pr0phecydc")
+	end)
+
+	UIStroke_20.Parent = MyHolder_1
+	UIStroke_20.Color = Color3.fromRGB(80,80,80)
+	UIStroke_20.Thickness = 1
+
+	DiscHolder_1.Name = "DiscHolder"
+	DiscHolder_1.Parent = CreditsMain_1
+	DiscHolder_1.AnchorPoint = Vector2.new(0.5, 0.5)
+	DiscHolder_1.BackgroundColor3 = Color3.fromRGB(27,27,27)
+	DiscHolder_1.BorderColor3 = Color3.fromRGB(0,0,0)
+	DiscHolder_1.BorderSizePixel = 0
+	DiscHolder_1.Position = UDim2.new(0.499611795, 0,0.729166687, 0)
+	DiscHolder_1.Size = UDim2.new(0, 160,0, 13)
+
+	DiscButton_1.Name = "DiscButton"
+	DiscButton_1.Parent = DiscHolder_1
+	DiscButton_1.AnchorPoint = Vector2.new(0.5, 0.5)
+	DiscButton_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+	DiscButton_1.BackgroundTransparency = 1
+	DiscButton_1.BorderColor3 = Color3.fromRGB(0,0,0)
+	DiscButton_1.BorderSizePixel = 0
+	DiscButton_1.Position = UDim2.new(0.5, 0,0.499997646, 0)
+	DiscButton_1.Size = UDim2.new(0, 160,0, 13)
+	DiscButton_1.Font = Enum.Font.Code
+	DiscButton_1.Text = "Discord"
+	DiscButton_1.TextColor3 = Color3.fromRGB(200,200,200)
+	DiscButton_1.TextSize = 12
+	DiscButton_1.TextStrokeTransparency = 0
+	DiscButton_1.MouseButton1Click:Connect(function()
+		DiscHolder_1.BackgroundColor3 = Color3.fromRGB(70,70,70)
+		wait(0.1)
+		DiscHolder_1.BackgroundColor3 = Color3.fromRGB(27,27,27)
+		setclipboard("https://discord.gg/TUedwJ272m")
+	end)
+	
+	UIStroke_21.Parent = DiscHolder_1
+	UIStroke_21.Color = Color3.fromRGB(80,80,80)
+	UIStroke_21.Thickness = 1
+
+	UIToggleHolder_1.Name = "UIToggleHolder"
+	UIToggleHolder_1.Parent = slycer
+	UIToggleHolder_1.AnchorPoint = Vector2.new(0.5, 0.5)
+	UIToggleHolder_1.BackgroundColor3 = Color3.fromRGB(35,35,35)
+	UIToggleHolder_1.BorderColor3 = Color3.fromRGB(0,0,0)
+	UIToggleHolder_1.BorderSizePixel = 0
+	UIToggleHolder_1.Position = UDim2.new(0.5, 0,0.0500000007, 0)
+	UIToggleHolder_1.Size = UDim2.new(0, 72,0, 24)
+
+	UIToggle_1.Name = "UIToggle"
+	UIToggle_1.Parent = UIToggleHolder_1
+	UIToggle_1.AnchorPoint = Vector2.new(0.5, 0.5)
+	UIToggle_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+	UIToggle_1.BackgroundTransparency = 1
+	UIToggle_1.BorderColor3 = Color3.fromRGB(0,0,0)
+	UIToggle_1.BorderSizePixel = 0
+	UIToggle_1.Position = UDim2.new(0.5, 0,0.5, 0)
+	UIToggle_1.Size = UDim2.new(0, 72,0, 24)
+	UIToggle_1.Font = Enum.Font.Code
+	UIToggle_1.Text = "slycer.gg"
+	UIToggle_1.TextColor3 = Color3.fromRGB(200,200,200)
+	UIToggle_1.TextSize = 13
+	UIToggle_1.TextStrokeTransparency = 0
+	UIToggle_1.TextXAlignment = Enum.TextXAlignment.Left
+
+	UIPadding_20.Parent = UIToggle_1
+	UIPadding_20.PaddingLeft = UDim.new(0,6)
+
+	UIStroke_22.Parent = UIToggleHolder_1
+	UIStroke_22.Color = Color3.fromRGB(87,87,87)
+	UIStroke_22.Thickness = 1
 	
 	-- Get references to the TextLabel and initialize variables
 	local startTime = tick() -- Get the initial time
@@ -663,11 +829,13 @@ function Slycer:CreateWindow(GameName)
 
 	-- Start the timer when the script runs
 	startTimer()
-	
+
 	local isMainVisible = true
 	local isFrame2Visible = true
 	local isFrame3Visible = true
 	local isFrame4Visible = true
+	local isFrame5Visible = true
+	local isFrame6Visible = true
 	
 	-- Function to toggle the visibility of Main_1
 	local function toggleMain()
@@ -686,13 +854,24 @@ function Slycer:CreateWindow(GameName)
 		isFrame3Visible = not isFrame3Visible
 		PlayerHolder_1.Visible = isFrame3Visible
 	end
-	
+
 	-- Function to toggle the visibility of Frame_4
 	local function toggleFrame4()
 		isFrame4Visible = not isFrame4Visible
 		PlaceHolder_1.Visible = isFrame4Visible
 	end
-
+	
+	-- Function to toggle the visibility of Frame_4
+	local function toggleFrame5()
+		isFrame5Visible = not isFrame5Visible
+		CreditsHolder_1.Visible = isFrame5Visible
+	end
+	
+	local function toggleFrame6()
+		isFrame6Visible = not isFrame6Visible
+		InfoBar_1.Visible = isFrame6Visible
+	end
+	
 	-- Bind the "P" key to toggle Main_1
 	game:GetService("UserInputService").InputBegan:Connect(function(input, isProcessed)
 		if not isProcessed and input.KeyCode == Enum.KeyCode.P then
@@ -706,9 +885,11 @@ function Slycer:CreateWindow(GameName)
 			toggleFrame2()
 			toggleFrame3()
 			toggleFrame4()
+			toggleFrame5()
+			toggleFrame6()
 		end
 	end)
-	
+
 	local Tabs = {}
 	local first = true
 	local currentTab = nil
